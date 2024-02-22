@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Properties Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      zoom: 125%; /* Adjust the page zoom level */
+    }
+     .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+   .layer1 {
+      z-index: 1;
+    }
+    .layer2 {
+      z-index: 2;
+    }
+    .box {
+      width: 200px;
+      height: 150px;
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid #3498db;
+      box-sizing: border-box; /* Include padding and border in box dimensions */
+    }
+   .focus-style {
+      outline: 2px solid #e74c3c;
+    }
+   .measurement-example {
+       width: 50%;
+      margin: 20px;
+      padding: 2em;
+      border: 1px solid #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="layer1">
+    <div class="box">Layer 1</div>
+  </div>
+  <div class="layer2">
+    <div class="box">Layer 2</div>
+  </div>
+<input type="text" class="focus-style" placeholder="Type here...">
+<div class="measurement-example">
+    <p>This box is 50% of the width of its containing element. It has a margin of 20px, padding of 2em, and a border of 1px solid green.</p>
+  </div>
+</body>
+</html>

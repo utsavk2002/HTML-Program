@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form Tag</h1>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <br />
+        <input
+          type="text"
+          name="myName"
+          id="name"
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="role">Role</label>
+        <br />
+        <input
+          type="text"
+          name="myRole"
+          id="role"
+          placeholder="Enter your Role"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input
+          type="email"
+          name="myEmail"
+          id="email"
+          placeholder="Enter your email"
+          required
+          autocomplete="off"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="date">Date</label>
+        <br />
+        <input type="Date" name="myDate" id="date" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="num">Number</label>
+        <br />
+        <input
+          type="number"
+          name="myNumber"
+          id="num"
+          max="5"
+          min="1"
+          value="5"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="eligible">Are you 18?</label>
+        <br />
+        <input type="checkbox" name="myCheckBox" id="eligible" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="gen">Gender</label>
+        <br />
+        Male<input type="radio" name="myGender" id="gen" /> Female<input
+          type="radio"
+          name="myGender"
+          id="gen"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="about">Write about yourself</label>
+        <br />
+        <textarea
+          name="myText"
+          cols="30"
+          rows="10"
+          id="about"
+          placeholder="Enter your word"
+        ></textarea>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="car">Car</label>
+        <br />
+        <select name="maycar" id="car">
+          <option value="ind">Indica</option>
+          <option value="swf">Swift</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div>
+        <label type="country">Select a country</label>
+        <input type="text" id="country" name="country" list="countries" />
+        <datalist id="countries">
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+        </datalist>
+      </div>
+      
+      <br />
+
+      <div>
+        <label for="file">My File:</label>
+        <input type="file" name="myFile" id="file" />
+      </div>
+
+      <br />
+
+      <div>
+        <input type="submit" value="login" />
+        <input type="reset" value="reset" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="range">Range:</label>
+        <br />
+        <input
+          type="range"
+          name="volume"
+          id="range"
+          min="0"
+          max="100"
+          value="80"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="apttime">Time</label>
+        <br />
+        <input type="time" name="myTime" id="apttime" />
+      </div>
+      <br />
+
+      <div>
+        <label for="color">Colors</label>
+        <br />
+        <input type="color" name="myColor" id="color" />
+      </div>
+      <br />
+
+      <div>
+        <label for="website">Website</label>
+        <br />
+        <input
+          type="ur"
+          name="myUrl"
+          id="website"
+          placeholder="Enter url link"
+        />
+      </div>
+
+      <br />
+      <div>
+        <label for="calender">Month&Year</label>
+        <br />
+        <input type="month" name="myCalender" id="calender" />
+      </div>
+      <br />
+      <div>
+        <label for="week">VacationWeek</label>
+        <br />
+        <input type="week" name="myWeek" id="week" />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

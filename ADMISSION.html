@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Admission Form</title>
+  </head>
+  <body>
+    <form action="/submit_admission_form" method="post">
+
+        <nav>
+            <ul style="display:flex; gap: 15px;list-style:none">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">SERVICE</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">ABOUTUS</a></li>
+            </ul>
+          </nav>
+
+      <div>
+        <label for="studentName">Full Name:</label>
+        <input type="text" id="studentName" name="studentName" required />
+      </div>
+      <br />
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      
+      <br />
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="course">Preferred Course:</label>
+        <select id="course" name="course" required>
+          <option value="engineering">Engineering</option>
+          <option value="business">Business Administration</option>
+          <option value="arts">Fine Arts</option>
+        </select>
+      </div>
+       <br />
+      <div>
+        <label for="gen">Gender:</label>
+        <br />
+        Male<input type="radio" name="myGender" id="gen" /> Female<input
+          type="radio"
+          name="myGender"
+          id="gen"
+        />
+      </div>
+     <br />
+      <div>
+        <label for="about">Write about yourself:</label>
+        <br />
+        <textarea
+          name="myText"
+          cols="30"
+          rows="10"
+          id="about"
+          placeholder="Enter your word"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <a href="tel:+6205825907">CONTACT</a>
+    </div>
+      
+
+      <br />
+      <div><button type="submit">Submit Admission Form</button></div>
+    </form>
+  </body>
+</html>
